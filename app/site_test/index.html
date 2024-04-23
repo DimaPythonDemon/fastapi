@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' href='indexcss.css'>
+    <link rel="shortcut icon" href="ava.png"/favicon1.ico">
+    <title>Легион Хаоса</title>
+
+</head>
+<body>
+
+    <section id="s1"> <p style="text-align: center;">Добро пожаловать<br>в Легион Хаоса</br></p> 
+        </section>
+   
+   
+   <section id="s2"> <style class="s1">
+        * {box-sizing: border-box}
+        body {
+        font-family: Verdana, sans-serif; 
+        margin:0
+        }
+        .mySlides {display: none}
+        img {
+            vertical-align: middle;
+            border-radius: 5%;
+        }
+        .slideshow-container {
+        max-width: 1383px;
+        max-height: 650;
+        position: relative;
+        margin-left: 90px;
+        margin-top: 90px;
+        
+
+        }
+        /* Кнопки next & previous */
+      
+        /* Измените положение "next button" */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+        /* Добавьте черный фоновый цвет с небольшой прозрачностью */
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+        /* Подпись под изображением */
+        .text {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        }
+        /* Number text (1/3 etc) */
+        .numbertext {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+        /* Точки/маркеры/указатели */
+        .dot {
+       
+        background-color: #999999;
+
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+        background-color: #111111;
+        }
+        /* Выцветание анимации */
+        .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+        /* Для маленьких экранов увеличьте размер текста  */
+        @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+        }
+      </style>
+    
+    <body>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="tw1.gif" style="width:100%">
+          <div class="text">ProGaMEr110521</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="yt1.gif" style="width:100%">
+          <div class="text">DARK.SIDE12</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="tw.png" style="width:100%">
+          <div class="text">Cha0s1t</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1} 
+          slides[slideIndex-1].style.display = "block"; 
+          setTimeout(showSlides, 2700); // Change image every 2 seconds
+        
+        }
+      </script>  </section>
+    <section id="s3">
+        <style>
+           
+             
+            /* Styling the area of the slides */
+             
+            #slideshow {
+                overflow: hidden;
+                height: 650px;
+                width: 1583px;
+                margin: 0 auto;
+            
+            }
+             
+            /* Style each of the sides
+            with a fixed width and height */
+             
+            .slide {
+                float: left;
+                height: 650px;
+                width: 1583px;
+                margin-top: -100px;
+            }
+             
+            /* Add animation to the slides */
+             
+            .slide-wrapper {
+                 
+                /* Calculate the total width on the
+              basis of number of slides */
+                width: calc(1583px * 4);
+                 
+                /* Specify the animation with the
+              duration and speed */
+                animation: slide 8.1s ease infinite;
+            }
+             
+     
+             
+           
+             
+            /* Define the animation
+            for the slideshow */
+             
+            @keyframes slide {
+                 
+                /* Calculate the margin-left for
+              each of the slides */
+                30% {
+                    margin-left: 0px;
+                }
+                60% {
+                    margin-left: calc(-1583px * 1);
+                }
+                90% {
+                    margin-left: calc(-1583px * 2);
+                }
+            }
+            </style>
+       
+         
+        
+             
+            <!-- Define the slideshow container -->
+            <div id="slideshow">
+                <div class="slide-wrapper">
+                     
+                    <!-- Define each of the slides
+                 and write the content -->
+                    <div class="slide">
+                        <h1 class="slide-number">
+                            <img src="v1.png" style="width:100%">
+                        </h1>
+                    </div>
+                    <div class="slide">
+                        <h1 class="slide-number">
+                            <img src="d1.png" style="width:100%">
+                        </h1>
+                    </div>
+                  
+                    <div class="slide">
+                        <h1 class="slide-number">
+                            <img src="c1.png" style="width:100%">
+                        </h1>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="s4">
+      <a href="https://www.twitch.tv/progamer110521">  <img src="v2.png" class="jerk" alt="Twitch ProGaMEr110521" title="Twitch ProGaMEr110521"></a>
+      <a href="https://www.youtube.com/@DARK.SIDE12"> <img src="d2.jpg" class="jerk" alt="Youtube DARK.SIDE12" title="Youtube DARK.SIDE12"></a>
+      <a href="https://www.twitch.tv/cha0s1t"><img src="c2.png" class="jerk" alt="Twitch Cha0s1t" title="Twitch Cha0s1t"></a> 
+      <a href="https://discord.com/invite/MFCDcsntE8"><img src="ava.png" class="jerk" alt="Наш Discord" title="Наш Discord"></a> 
+    </section>
+    <section id="s5"> <p style="text-align: center; font-size: 25px;  "><br>Мы с радостью приглашаем вас присоединиться к нам на нашем сервере! <br>Будем рады видеть вас в нашем дружелюбном и увлекательном сообществе!
+    </br></p> 
+    </section>
+<nav>
+    <a href="#s1">Главная</a>
+    <a href="#s2">О нас</a>
+    <a href="#s3">FAQ</a>
+    <a href="#s4">Ссылки</a>
+</nav>
+</body>
+</html>

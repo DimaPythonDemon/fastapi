@@ -1,0 +1,163 @@
+@charset "TF-8";
+p{
+    color: white;
+    justify-content: right; 
+    text-align: right;
+}
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+section{
+/* position: relative; */
+width:100%;
+height:650px;
+display: flex;
+/* align-items: center; */
+font-size: 5em;
+font-weight: 800;
+text-align: right;
+justify-content: right; 
+
+}
+
+section:nth-child(odd){
+ background: #0e1621; 
+
+/* border: solid white 1px; */
+
+}
+section:nth-child(even){
+    background: #0e1621;
+}
+
+nav{
+position: fixed;
+top: 0;
+width:100%;
+text-align: center;
+background: #282c3c;
+
+}
+
+nav a{
+    position:relative;
+    color:aliceblue;
+    text-decoration: none;
+    padding: 8px 25px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+nav a:hover,
+section#s1:hover~nav a[href="#s1"],
+section#s2:hover~nav a[href="#s2"],
+section#s3:hover~nav a[href="#s3"],
+section#s4:hover~nav a[href="#s5"]
+{
+    background: #a8e9f1;
+    color: gray
+}
+
+nav a:active{
+    background: #4f8892;
+}
+
+section:nth-child(1){
+    height: 650px;
+    width: 1583px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-image: url(home.png);
+    justify-content: center; 
+    align-items: center;
+
+}
+
+
+section:nth-child(2){
+    height: 650px;
+    width: 1583px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-image: url(home2.png);
+    
+}
+
+section:nth-child(3){
+    height: 650px;
+    width: 1583px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-image: url();
+    background: #000000;
+}
+
+section:nth-child(4){
+    height: 350px;
+    width: 1583px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-image: url();
+    background: #000000;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+section:nth-child(5){
+    height: 250px;
+    width: 1583px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-image: url();
+    background: #000000;
+    justify-content: center; 
+    
+
+}
+
+
+P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: right; 
+
+    
+}
+.t1{
+    overflow:hidden;
+    table-layout:fixed;
+    width: 1583px;
+    
+}​
+
+h1{
+
+    color: white;
+    justify-content: right; 
+    text-align: right;
+
+}
+
+.jerk {
+    border-radius: 100px;
+    height: 110px;
+    width: 110px;
+    margin: 100px;
+}
